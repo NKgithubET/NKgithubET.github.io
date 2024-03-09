@@ -1,22 +1,31 @@
 .outer-container {
   background-color: black;
-  padding: 20px;
+  padding: 2%; /* Use percentage for padding to make it responsive */
 }
 
 .inner-container {
-  margin: 10px auto;
-  width: 42%;
+  margin: 2% auto; /* Use percentage for margin to make it responsive */
+  width: 80%; /* Use percentage for width to make it responsive */
+  max-width: 600px; /* Set a max-width for better readability on larger screens */
   background-color: white;
   text-align: center;
-  padding: 150px;
+  padding: 10%; /* Use percentage for padding to make it responsive */
 }
 
 input[type="range"] {
   width: 100%;
-  margin: 10px 0;
+  margin: 2% 0; /* Use percentage for margin to make it responsive */
   background: rgb(0, 0, 0);
 }
 
 h1 {
   color: rgb(0, 0, 0);
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .inner-container {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 8%; /* Adjust padding for smaller screens */
+  }
 }
